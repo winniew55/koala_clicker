@@ -25,4 +25,3 @@ function clickCounter(){
     alert ("Chill out!  That was your 20th click.")
   }
 }
-
