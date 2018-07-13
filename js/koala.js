@@ -3,7 +3,6 @@
 //or addEventListener syntax (see debugging project for example)
 
 let clickable= document.querySelector("img.clickable")
-
     clickable.addEventListener("click", clickCounter)
 
 //declare the counter variable
@@ -27,6 +26,6 @@ console.log("counter", counter)
   
   // get the container, update its contents
   
-  let container = document.qurerySelector("p#clickcount")
+  let container = document.querySelector("p#clickcount")
   container.innerHTML=counter
 }
