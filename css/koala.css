@@ -1,0 +1,15 @@
+.clickable {
+  transition: 1.0s;
+}
+
+.clickable2 {
+  transform: rotate(180deg);
+} 
+
+.numbers {
+  color: black;
+}
+
+.numbers2 {
+  color: red;
+}

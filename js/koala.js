@@ -2,31 +2,27 @@
 //2. elVariableName.click
 //or addEventListener syntax (see debugging project for example)
 
-let clickable= document.querySelector("img.clickable")
-
-    clickable.addEventListener("click", clickCounter)
-
-//declare the counter variable
+let clickable = document.querySelector("img.clickable");
+clickable.addEventListener("click", clickCounter);
 
 let counter = 0
-console.log ("counter:", counter)
-
-//click handler function
 
 function clickCounter(){
-
-
-//track total clicks increment the counter variable
-
-//counter=counter+1
-  
   counter++
-  
-//output click count to container in DOM
-console.log("counter", counter)
-  
-  // get the container, update its contents
-  
-  let container = document.qurerySelector("p#clickcount")
+  let container = document.querySelector("p#clickcount")
   container.innerHTML=counter
+  
+  let displayTitle = document.querySelector("title");
+  displayTitle.innerHTML = counter;
+  
+  if (counter === 10) {
+    let rotate = document.querySelector("img.clickable")
+    rotate.setAttribute("class", "clickable2")
+    alert("Congrats, you clicked 10 times!")
+  } else if (counter === 20) {
+    let rotate2 = document.querySelector("img.clickable2")
+    rotate2.setAttribute("class", "clickable")
+    alert ("Chill out!  That was your 20th click.")
+  }
 }
+
