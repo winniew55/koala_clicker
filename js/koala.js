@@ -29,3 +29,4 @@ console.log("counter", counter)
   let container = document.querySelector("p#clickcount")
   container.innerHTML=counter
 }
+
